@@ -1,0 +1,53 @@
+[package]
+name = "scrapling"
+description = "Fast, adaptive web scraping toolkit for Rust"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[features]
+default = ["storage"]
+storage = ["dep:rusqlite"]
+
+[dependencies]
+thiserror.workspace = true
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+once_cell.workspace = true
+lru.workspace = true
+
+# HTML parsing
+scraper.workspace = true
+html5ever.workspace = true
+ego-tree.workspace = true
+
+# Text processing
+htmlize.workspace = true
+
+# Adaptive storage (optional)
+rusqlite = { version = "0.33", features = ["bundled"], optional = true }
+
+# Similarity scoring
+strsim = "0.11"
+
+# URL handling
+url = "2"
+
+# Encoding detection
+encoding_rs = "0.8"
+
+# HTML conversion
+html2md.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+insta.workspace = true
+criterion.workspace = true
+
+[[bench]]
+name = "parsing"
+harness = false

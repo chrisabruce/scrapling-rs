@@ -1,0 +1,77 @@
+[workspace]
+members = [
+    "crates/scrapling",
+    "crates/scrapling-fetch",
+    "crates/scrapling-browser",
+    "crates/scrapling-spider",
+    "crates/scrapling-cli",
+    "crates/scrapling-mcp",
+    "examples",
+]
+exclude = [
+    "crates/scrapling-python",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["Chris Bruce <chrisabruce@gmail.com>"]
+repository = "https://github.com/chrisabruce/scrapling-rs"
+rust-version = "1.85"
+
+[workspace.dependencies]
+# Core
+thiserror = "2"
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+once_cell = "1"
+lru = "0.13"
+
+# HTML parsing
+scraper = "0.22"
+html5ever = "0.30"
+markup5ever = "0.15"
+selectors = "0.26"
+ego-tree = "0.10"
+
+# Text processing
+htmlize = { version = "1", features = ["unescape"] }
+html2md = "0.2"
+
+# Async
+tokio = { version = "1", features = ["full"] }
+
+# HTTP / TLS (curl-impersonate for browser fingerprint impersonation)
+url = "2"
+bytes = "1"
+rand = "0.8"
+tracing = "0.1"
+
+# Browser automation
+playwright-rs = "0.10"
+
+# Python bindings
+pyo3 = { version = "0.24", features = ["extension-module"] }
+
+# Crypto / encoding
+sha1 = "0.10"
+hex = "0.4"
+base64 = "0.22"
+async-trait = "0.1"
+
+# CLI
+anyhow = "1"
+
+# Testing / Benchmarks
+proptest = "1"
+insta = { version = "1", features = ["yaml"] }
+criterion = { version = "0.5", features = ["html_reports"] }
+
+# Internal crates
+scrapling = { path = "crates/scrapling" }
+scrapling-fetch = { path = "crates/scrapling-fetch" }
+scrapling-browser = { path = "crates/scrapling-browser" }
+scrapling-spider = { path = "crates/scrapling-spider" }

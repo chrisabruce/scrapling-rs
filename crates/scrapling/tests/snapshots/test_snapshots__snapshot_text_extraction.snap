@@ -1,0 +1,5 @@
+---
+source: crates/scrapling/tests/test_snapshots.rs
+expression: text.as_ref()
+---
+Title First paragraph with bold text. Second paragraph.

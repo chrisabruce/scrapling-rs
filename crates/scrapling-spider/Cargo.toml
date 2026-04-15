@@ -1,0 +1,25 @@
+[package]
+name = "scrapling-spider"
+description = "Concurrent web crawler framework for scrapling"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+scrapling.workspace = true
+scrapling-fetch.workspace = true
+scrapling-browser = { path = "../scrapling-browser" }
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio = { workspace = true, features = ["full"] }
+tracing.workspace = true
+url.workspace = true
+bytes.workspace = true
+sha1.workspace = true
+hex.workspace = true
+base64.workspace = true
+async-trait.workspace = true

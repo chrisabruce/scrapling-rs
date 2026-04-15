@@ -1,0 +1,63 @@
+[package]
+name = "scrapling-examples"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+scrapling = { path = "../crates/scrapling" }
+scrapling-fetch = { path = "../crates/scrapling-fetch" }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
+
+[[example]]
+name = "01_parse_html"
+path = "01_parse_html.rs"
+
+[[example]]
+name = "02_css_selectors"
+path = "02_css_selectors.rs"
+
+[[example]]
+name = "03_text_extraction"
+path = "03_text_extraction.rs"
+
+[[example]]
+name = "04_attributes"
+path = "04_attributes.rs"
+
+[[example]]
+name = "05_navigation"
+path = "05_navigation.rs"
+
+[[example]]
+name = "06_find_similar"
+path = "06_find_similar.rs"
+
+[[example]]
+name = "07_adaptive"
+path = "07_adaptive.rs"
+
+[[example]]
+name = "08_regex"
+path = "08_regex.rs"
+
+[[example]]
+name = "09_http_fetch"
+path = "09_http_fetch.rs"
+
+[[example]]
+name = "10_json_extraction"
+path = "10_json_extraction.rs"
+
+[[example]]
+name = "11_selector_generation"
+path = "11_selector_generation.rs"
+
+[[example]]
+name = "12_curl_parser"
+path = "12_curl_parser.rs"
+
+[[example]]
+name = "13_html_to_markdown"
+path = "13_html_to_markdown.rs"

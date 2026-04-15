@@ -1,0 +1,22 @@
+[package]
+name = "scrapling-cli"
+description = "Command-line interface for scrapling"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "scrapling"
+path = "src/main.rs"
+
+[dependencies]
+scrapling.workspace = true
+scrapling-fetch.workspace = true
+thiserror.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+clap = { version = "4", features = ["derive"] }
+anyhow.workspace = true

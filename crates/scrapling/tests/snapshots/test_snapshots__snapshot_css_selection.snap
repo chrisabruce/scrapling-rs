@@ -1,0 +1,6 @@
+---
+source: crates/scrapling/tests/test_snapshots.rs
+expression: result
+---
+- id=1 name=Widget price=$10
+- id=2 name=Gadget price=$20

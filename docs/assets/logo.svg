@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Crab body -->
+  <ellipse cx="60" cy="65" rx="30" ry="22" fill="#E44D26" opacity="0.9"/>
+  <!-- Crab eyes -->
+  <circle cx="50" cy="48" r="6" fill="#1a1a2e"/>
+  <circle cx="70" cy="48" r="6" fill="#1a1a2e"/>
+  <circle cx="51" cy="47" r="2.5" fill="white"/>
+  <circle cx="71" cy="47" r="2.5" fill="white"/>
+  <!-- Crab claws (left) -->
+  <path d="M30 55 Q15 45 12 38 Q10 34 15 33 Q20 32 22 36 Q25 42 30 48" stroke="#E44D26" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M12 38 Q8 35 10 30" stroke="#E44D26" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M12 38 Q15 34 18 30" stroke="#E44D26" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Crab claws (right) -->
+  <path d="M90 55 Q105 45 108 38 Q110 34 105 33 Q100 32 98 36 Q95 42 90 48" stroke="#E44D26" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M108 38 Q112 35 110 30" stroke="#E44D26" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M108 38 Q105 34 102 30" stroke="#E44D26" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Crab legs -->
+  <path d="M35 72 Q25 82 18 88" stroke="#E44D26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M40 76 Q32 88 26 94" stroke="#E44D26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M48 78 Q42 90 38 96" stroke="#E44D26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M85 72 Q95 82 102 88" stroke="#E44D26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M80 76 Q88 88 94 94" stroke="#E44D26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M72 78 Q78 90 82 96" stroke="#E44D26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Web strand connecting claw to text -->
+  <path d="M15 33 Q20 20 30 15 Q50 5 80 8 Q110 11 130 20" stroke="#888" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="3,3"/>
+  <!-- Text: scrapling -->
+  <text x="130" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#1a1a2e">scrapling</text>
+  <!-- Text: -rs -->
+  <text x="355" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#E44D26">-rs</text>
+  <!-- Tagline -->
+  <text x="130" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#666">adaptive web scraping, built in rust</text>
+</svg>

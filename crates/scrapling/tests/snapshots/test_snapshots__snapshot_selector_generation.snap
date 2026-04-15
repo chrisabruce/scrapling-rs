@@ -1,0 +1,6 @@
+---
+source: crates/scrapling/tests/test_snapshots.rs
+expression: selectors
+---
+- "#main > ul > li:nth-of-type(1)"
+- "#main > ul > li:nth-of-type(2)"
