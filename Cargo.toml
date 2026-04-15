@@ -6,10 +6,8 @@ members = [
     "crates/scrapling-spider",
     "crates/scrapling-cli",
     "crates/scrapling-mcp",
-    "examples",
-]
-exclude = [
     "crates/scrapling-python",
+    "examples",
 ]
 resolver = "3"
 
