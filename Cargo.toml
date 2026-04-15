@@ -69,7 +69,7 @@ insta = { version = "1", features = ["yaml"] }
 criterion = { version = "0.5", features = ["html_reports"] }
 
 # Internal crates
-scrapling = { path = "crates/scrapling" }
-scrapling-fetch = { path = "crates/scrapling-fetch" }
-scrapling-browser = { path = "crates/scrapling-browser" }
-scrapling-spider = { path = "crates/scrapling-spider" }
+scrapling = { path = "crates/scrapling", version = "0.1.0" }
+scrapling-fetch = { path = "crates/scrapling-fetch", version = "0.1.0" }
+scrapling-browser = { path = "crates/scrapling-browser", version = "0.1.0" }
+scrapling-spider = { path = "crates/scrapling-spider", version = "0.1.0" }
