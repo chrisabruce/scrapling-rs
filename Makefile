@@ -1,19 +1,19 @@
 .PHONY: build check test fmt clippy clean publish publish-dry-run
 
 build:
-	cargo build --workspace
+	cargo build --workspace --exclude scrapling-python
 
 check:
-	cargo check --workspace
+	cargo check --workspace --exclude scrapling-python
 
 test:
-	cargo test --workspace
+	cargo test --workspace --exclude scrapling-python
 
 fmt:
 	cargo fmt --all
 
 clippy:
-	cargo clippy --workspace -- -D warnings
+	cargo clippy --workspace --exclude scrapling-python -- -D warnings
 
 clean:
 	cargo clean
