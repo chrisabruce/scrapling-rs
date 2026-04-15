@@ -2888,7 +2888,7 @@ dependencies = [
 
 [[package]]
 name = "scrapling"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "criterion",
  "ego-tree",
@@ -2912,7 +2912,7 @@ dependencies = [
 
 [[package]]
 name = "scrapling-browser"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "bytes",
  "playwright-rs",
@@ -2929,7 +2929,7 @@ dependencies = [
 
 [[package]]
 name = "scrapling-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "clap",
@@ -2952,7 +2952,7 @@ dependencies = [
 
 [[package]]
 name = "scrapling-fetch"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "bytes",
  "rand 0.8.5",
@@ -2970,7 +2970,7 @@ dependencies = [
 
 [[package]]
 name = "scrapling-mcp"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "rand 0.8.5",
@@ -2984,7 +2984,7 @@ dependencies = [
 
 [[package]]
 name = "scrapling-python"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "bytes",
  "pyo3",
@@ -2996,7 +2996,7 @@ dependencies = [
 
 [[package]]
 name = "scrapling-spider"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "async-trait",
  "base64",
